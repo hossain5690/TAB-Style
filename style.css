@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sb {
+    @apply border border-red-500;
+  }
+.clr{
+    background: rgba(8, 88, 251, 0.10);
+box-shadow: 0px 0px 10px 0px rgba(8, 88, 251, 0.15);
+}
+.container {
+    margin: 0 auto;
+    width: calc(100% - 40px);
+    max-width: 1280px;
+  }
+  
+  @media (min-width: 640px) {
+    .container {
+      width: calc(100% - 60px);
+    }
+  }
+  
+  @media (min-width: 960px) {
+    .container {
+      width: calc(100% - 80px);
+    }
+  }
+  @layer base {
+    body {
+      @apply box-border overflow-x-hidden ;
+    }
+}
